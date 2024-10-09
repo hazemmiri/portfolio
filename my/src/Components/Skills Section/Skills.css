@@ -1,0 +1,147 @@
+
+/* colors and default size */
+:root{
+    --primaryColor:#00eaff;
+    --primarHover:hsl(185, 92, 41%);
+    --secondarColor:rgb(150, 162, 188);
+    --pargraphColor:rgb(127, 127, 175);
+    --BgColor:#031a30;
+    --formColor:rgb(2, 15, 29);
+    --projectCaderColor:#072340;
+    --textColor:#dae4fd;
+    --headerHeight: 3rem;
+
+}
+
+.skills{
+    .skillsContainer{
+         gap: 2rem 0;
+         padding: 1rem 0;
+
+
+         .skillsGroup{
+            .groupTitle{
+                color: var(--textColor);
+
+                .subTitle{
+                    display: block;
+                    padding: .3rem 0 1rem;
+                    color: var(--secondarColor);
+                    font-weight: 600;
+                }
+            }
+
+            .generallSkills{
+                display: grid;
+                align-items: center;
+            justify-content:center;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1rem;
+
+            .singlSkills{
+                display: grid;
+                align-items: center;
+                justify-content: center;
+
+
+
+                .iconBox{
+                    position: relative;
+                    height: 50px;
+                    width: 50px;
+                    background: var(--projectCaderColor);
+                    border: 2px solid var(--secondarColor);
+                    border-radius: 3rem;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    z-index: 500;
+
+
+
+                    .icon{
+                        font-size: 28px;
+                        z-index: 500;
+                    }
+                }
+            }
+
+            .iconBox::before{
+                content: '';
+                height: 0;
+                width: 100%;
+                background: var(--primarHover);
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                transition: .2s;
+            }
+
+            .iconBox::after{
+                content: '';
+                height: 0;
+                width: 100%;
+                background: var(--BgColor);
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                transition: .5s;
+            }
+
+            .iconBox:hover{
+                color: var(--primaryColor);
+                border: 2px solid var(--primaryColor);
+
+                .icpn{
+                    color: var(--primaryColor);
+                }
+            }
+
+            .iconBox:hover::before, .iconBox:hover::after{
+                height: 100%;
+            }
+
+            .skillsName{
+                padding-top: 2rem;
+                text-align: center;
+                font-weight: 600;
+                color: var(--secondarColor);
+            }
+                
+               
+            }
+
+         }
+    }
+
+ 
+    
+
+
+}
+
+
+
+.title{
+    font-size: 1rem;
+            padding: 6rem 1rem;
+            color: aliceblue;
+            padding: 2rem 1rem ;
+            max-width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES==========================> */
+
+
+

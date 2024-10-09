@@ -1,0 +1,222 @@
+/* colors and default size */
+:root{
+    --primaryColor:#00eaff;
+    --primarHover:hsl(185, 92, 41%);
+    --secondarColor:rgb(150, 162, 188);
+    --pargraphColor:rgb(127, 127, 175);
+    --BgColor:#031a30;
+    --formColor:rgb(2, 15, 29);
+    --projectCaderColor:#072340;
+    --textColor:#dae4fd;
+    --headerHeight: 3rem;
+
+}
+
+
+.home{
+
+    .homeContainet{
+        padding: 4rem 1.5rem;
+
+        .introText{
+            font-size: 1.3rem;
+            color: var(--primaryColor);
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .title{
+            font-size: 3.3rem;
+            font-weight: 600;
+            color: var(--textColor);
+            padding: .7rem 0;
+        }
+
+        .subTitle{
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--secondarColor);
+            line-height: 2rem;
+            padding: .5rem 0;
+        }
+
+        .homeParaghraph{
+            font-size: 1.3rem;
+            padding: .6rem 1rem;
+            color: var(--pargraphColor);
+            padding: 1rem 0 ;
+            max-width: 600px;
+        }
+
+    
+    }
+    .lowerHomeSectiont{
+
+        .contactBtn{
+            padding: .5rem;
+            margin-left: 1rem;
+            background: var(--primaryColor);
+            color: var(--BgColor);
+            border: none;
+            outline: none;
+            transition: 3s ease;
+        }
+
+        a{
+            font-size: 18px;
+            font-weight: 200;
+            gap: .5rem;
+            align-items: center;
+            color: var(--BgColor);
+        }
+
+        .scrollDiv{
+          padding-top: 1rem;
+          margin-left: 1rem;
+          display: flex;
+          align-items: center;
+
+          .scroll{
+            font-size: 1rem;
+            color: var(--primaryColor  );
+          }
+
+          .icon{
+            font-size: 1.3rem;
+            margin-left: 1rem;
+            color: var(--primaryColor);
+            animation: move .5s ;
+          }
+          @keyframes move {
+            0%{
+                transform: translateY(5px)
+            }
+          } 
+        
+        }
+    }
+}
+
+
+
+
+/* Media Querise============================================= */
+
+@media screen and (min-width: 770px){
+    .home{
+        .homeContainet{
+            padding: 5rem 1.5rem;
+            width: 70%;
+            margin: auto;
+        }
+        .leftIcons, .rightEmail{
+            display: block;
+            /* position: fixed; */
+            .icon{
+                color: var(--secondarColor);
+    
+            }
+            a{
+                font-weight: 600;
+                color: var(--secondarColor);
+            }
+            .line{
+                margin: 0.5rem;
+                content: '';
+                background: var(--secondarColor);
+                height: 100px;
+                width: 1px;
+            }
+        }
+
+        .leftIcons{
+            left: 10%;
+            bottom: 0;
+            .socials{
+                gap: 1rem;
+                a{
+                    color: var(--textColor);
+                    &:hover{
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
+        
+        .rightEmail{
+            right: 0;
+            bottom: 0;
+            .emailAddress{
+                transform: rotate(90deg) translate(-90px, -490px);
+                a{
+                    letter-spacing: 5px;
+                    color: var(--textColor);
+
+                    .line{
+                        margin: 0.5rem;
+                        content: '';
+                        background: var(--secondarColor);
+                        height: 100px;
+                        width: 1px;
+                    }
+                }
+                
+            }
+
+            
+        }
+
+
+
+
+
+
+
+
+        .lowerHomeSectiont{
+            .contactBtn{
+                padding: .8rem 1rem;
+                margin-left: 11rem;
+            }
+
+            .scrollDiv{
+                padding: .8rem 1rem;
+                margin-left: 11rem;
+
+            }
+        }
+
+    }
+
+}
+
+
+
+/* @media screen and (min-width: 1240px){
+    .home{
+        .homeContainet{
+            padding: 6rem;
+            .introText{
+                font-size: 1.5rem;
+            }
+            .title{
+                font-size: 5rem;
+            }
+            .subTitle{
+                line-height: 2.5rem;
+                font-size: 2.4rem;
+            }
+            .homeParaghraph{
+                font-size: 1.8rem;
+            }
+        }
+    }
+} */
+

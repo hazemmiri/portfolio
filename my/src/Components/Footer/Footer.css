@@ -1,0 +1,28 @@
+/* colors and default size */
+:root{
+    --primaryColor:#00eaff;
+    --primarHover:hsl(185, 92, 41%);
+    --secondarColor:rgb(150, 162, 188);
+    --pargraphColor:rgb(127, 127, 175);
+    --BgColor:#031a30;
+    --formColor:rgb(2, 15, 29);
+    --projectCaderColor:#072340;
+    --textColor:#dae4fd;
+    --headerHeight: 3rem;
+
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    background: var(--projectCaderColor);
+    margin-top: 1rem;
+    padding: 1rem 0;
+
+    span{
+        text-align: center;
+        color: var(--secondarColor);
+        opacity: .5;
+        font-size: 10px;
+    }
+}
